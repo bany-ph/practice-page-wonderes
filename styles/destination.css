@@ -6,41 +6,7 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  /* ? change it later */
-  #main-nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-  .links-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 1rem;
-    width: 100%;
-  }
-
-  .links-nav a {
-    margin: 0.5rem 0;
-  }
-
-  .links-nav a + a {
-    margin-left: 0;
-  }
-
-  main {
-    margin: 1rem;
-  }
-}
-@media (max-width: 480px) {
-  body {
-    font-size: 0.9rem;
-  }
-
-  a {
-    font-size: 0.75rem;
-  }
-}
 
 :root {
   --special-color: rgba(63, 208, 212, 1);
@@ -130,14 +96,14 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
-    width: 70rem;
-    height: 51rem;
+    
     color: white;
 }
 
 .card{
     position: relative;
-    background-color: var(--special-color);
+    width: 20rem;
+    height: 20rem;
     border-radius: 8px;
 }
 .info-position{
@@ -163,6 +129,7 @@ a {
 
 
 .one{
+  width: 100%;
     background-image: url("../assets/images/Box-Image1.png");
     grid-column: span 2 / span 2;
 }
@@ -180,3 +147,28 @@ a {
     background-image: url("../assets/images/Box-Image5.png");
 }
 
+
+@media (max-width: 768px) {
+  /* ? change it later */
+
+  .hide{
+    display: none;
+  }
+
+  .content-cards{
+   grid-template-columns: repeat(1,1fr);
+   
+  }
+  .card{
+    grid-column: 1;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  a {
+    font-size: 0.75rem;
+  }
+}
