@@ -16,12 +16,12 @@ body {
   margin: 0;
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
- 
   color: black;
 }
 
 main {
-  margin: 1.6rem 13rem;
+  margin: 0 auto; 
+  width: fit-content;
 }
 
 a {
@@ -35,11 +35,12 @@ a {
   color: var(--special-color);
 }
 
-#main-nav,
-#second-nav {
+#main-nav
+{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 5rem;
 }
 
 #second-nav {
@@ -60,7 +61,7 @@ a {
 }
 
 .links-nav a + a {
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 
 .icons-left img {
@@ -87,7 +88,8 @@ a {
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  margin: 2rem 0rem;
+  padding: 1rem 0;
+  width: fit-content;
 }
 
 
@@ -96,7 +98,6 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
-    
     color: white;
 }
 
@@ -151,7 +152,7 @@ a {
 
 @media (max-width: 768px) {
   /* ? change it later */
-
+ 
   .hide{
     display: none;
   }
