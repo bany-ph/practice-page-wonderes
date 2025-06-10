@@ -82,21 +82,21 @@ a {
 }
 
 .content {
+
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+
   align-items: center;
   justify-content: center;
   gap: 3rem;
   padding: 1rem 0;
-  width: fit-content;
+  
 }
 
 
 .content-cards{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3,minmax(300px,1fr));
     gap: 1rem;
     color: white;
 }
@@ -106,7 +106,7 @@ a {
     width: 20rem;
     height: 20rem;
     border-radius: 8px;
-    background-size: c;
+   
 }
 .info-position{
     position: absolute;
